@@ -1,9 +1,9 @@
 <?php
 
-namespace frontend\models\thread;
+namespace frontend\modules\Thread\models;
 
 use Yii;
-use frontend\models\thread\Thread;
+use frontend\modules\Thread\models\Thread;
 use common\models\User;
 
 /**

@@ -1,22 +1,22 @@
 <?php
 
-namespace frontend\controllers;
+namespace frontend\modules\Thread\controllers;
 
 use Yii;
-use frontend\models\thread\Thread;
-use frontend\models\thread\ThreadSearch;
+use frontend\modules\Thread\models\Thread;
+use frontend\modules\Thread\models\ThreadSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\HttpException;
-use frontend\models\thread\Comments;
+use frontend\modules\Thread\models\Comments;
 use yii\data\ActiveDataProvider;
 
 /**
  * ThreadController implements the CRUD actions for Thread model.
  */
-class ThreadController extends Controller
+class DefaultController extends Controller
 {
 	/**
 	 * @inheritdoc

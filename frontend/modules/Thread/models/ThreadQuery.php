@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\models\thread;
+namespace frontend\modules\Thread\models;
 
 /**
  * This is the ActiveQuery class for [[Thread]].

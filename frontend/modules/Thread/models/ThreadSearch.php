@@ -1,11 +1,11 @@
 <?php
 
-namespace frontend\models\thread;
+namespace frontend\modules\Thread\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\models\thread\Thread;
+use frontend\modules\Thread\models\Thread;
 use yii\db\Expression;
 
 /**

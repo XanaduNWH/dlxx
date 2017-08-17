@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\models\thread;
+namespace frontend\modules\Thread\models;
 
 use Yii;
 use common\models\User;
@@ -101,7 +101,7 @@ class Thread extends \yii\db\ActiveRecord
 				return true;
 			} else {
 				$this->lastcomment_at = new Expression('NOW()');
-				($this->scenario == SCENARIO_ADDACOMMENT) ? NULL:$this->updated_at = new Expression('NOW()');
+				($this->scenario == Thread::SCENARIO_ADDACOMMENT) ? NULL:$this->updated_at = new Expression('NOW()');
 				$this->updated_by = Yii::$app->user->id;
 				return true;
 			}
