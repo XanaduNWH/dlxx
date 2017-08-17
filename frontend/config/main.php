@@ -41,14 +41,13 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+				'site/sayYes' => 'site/sayyes',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];

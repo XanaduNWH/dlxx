@@ -29,14 +29,32 @@ return [
                 ],
             ],
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
+			'enableStrictParsing' => true,
             'showScriptName' => false,
-            'rules' => [
-            ],
+			'rules' => [
+				['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
+				[
+					'class' => 'yii\rest\UrlRule',
+					'controller' => 'country',
+					'tokens' => [
+						'{id}' => '<id:\\w+>',
+                    ],
+				],
+			],
         ],
-        */
+		'response' => [
+			// ...
+			'formatters' => [
+				\yii\web\Response::FORMAT_JSON => [
+					'class' => 'yii\web\JsonResponseFormatter',
+					'prettyPrint' => YII_DEBUG, // use "pretty" output in debug mode
+					'encodeOptions' => JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE,
+					// ...
+				],
+			],
+		],
     ],
     'params' => $params,
 ];
