@@ -1,5 +1,6 @@
+Keyword
 ===============================
-Keyword: 面向对象
+面向对象
 
 
 配置
@@ -12,18 +13,25 @@ Yii2 需要PHP版本高于5.4,最佳匹配PHP7
 安装
 -------------------------------
 - composer
+
   `curl -sS https://getcomposer.org/installer | php`
 
 - 更新全局asset plugin
+
   `composer.phar global require "fxp/composer-asset-plugin:^1.3.1"`
 
 - 更新框架
+
   `php composer.phar update`
+
   *由于众所周知的网络问题，此步有极大几率失败。
-   解决方案1：proxychains
-   解决方案2：composer更换国内源
+
+  解决方案1：proxychains
+
+  解决方案2：composer更换国内源
 
 - 环境初始化
+
   `./init`
 
 - 配置数据库
@@ -32,14 +40,18 @@ Yii2 需要PHP版本高于5.4,最佳匹配PHP7
 'db' => [
     'class' => 'yii\db\Connection',
     'dsn' => 'pgsql:host=localhost;dbname=yii2_test', //Postgresql
+    // 'dsn' => 'mysql:host=localhost;dbname=yii2',  //MySQL
     'username' => 'yii',
     'password' => 'yii',
     'charset' => 'utf8',
 ],
 ```
+环境配置信息应写在main-local.php中
+
 yii2_test.sql是Postgresql的数据库DUMP，可导入使用。
 
 空库开始的话需要用初始化数据库
+
 `yii migrate/up`
 
 
@@ -63,6 +75,12 @@ DIRECTORY STRUCTURE
 
 ```
 yii2_test.sql            Postgresql db dump
+requirements.php         Application requirement checker script.
+api
+    config/              contains api configurations
+    controllers/         contains Api controller classes
+    models/              contains api-specific model classes
+    web/                 contains the entry script
 common
     config/              contains shared configurations
     mail/                contains view files for e-mails
