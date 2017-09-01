@@ -59,19 +59,6 @@ class DefaultController extends Controller
 	}
 
 	/**
-	 * @inheritdoc
-	 */
-	public function actions()
-	{
-		return array_merge(parent::actions(),[
-			'captcha' => [
-				'class' => 'yii\captcha\CaptchaAction',
-				'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-			],
-		]);
-	}
-
-	/**
 	 * Lists all Thread models.
 	 * @return mixed
 	 */

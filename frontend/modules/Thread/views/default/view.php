@@ -114,6 +114,7 @@ echo ListView::widget([
 		]) ?>
 	<?= $form->field($comments, 'verifyCode')->widget(Captcha::className(), [
 		'template' => '<div class="row"><div class="col-lg-2">{image}</div><div class="col-lg-2">{input}</div></div>',
+		'captchaAction' => '/site/captcha',
 		]) ?>
 
 	<div class="form-group">
