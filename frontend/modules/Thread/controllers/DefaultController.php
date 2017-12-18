@@ -33,7 +33,7 @@ class DefaultController extends Controller
 						'roles' => ['?','@'],
 					],
 					[
-						'actions' => ['index','view','update'],
+						'actions' => ['index','view','update','delete'],
 						'allow' => true,
 						'roles' => ['author'],
 					],
@@ -145,7 +145,7 @@ class DefaultController extends Controller
 				]);
 			}
 		} else {
-			throw new HttpException(403, 'You do not have permission to update this record.');
+			throw new HttpException(403, 'You do not have permission to update this thread.');
 		}
 	}
 
@@ -157,9 +157,14 @@ class DefaultController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->findModel($id)->delete();
+		$model = $this->findModel($id);
 
-		return $this->redirect(['index']);
+		if(Yii::$app->user->can('deleteOwnPost',['thread' => $model])) {
+			$model->delete();
+			return $this->redirect(['index']);
+		} else {
+			throw new HttpException(403, 'You do not have permission to delete this thread.');
+		}
 	}
 
 	/**

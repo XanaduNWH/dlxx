@@ -21,6 +21,15 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php Pjax::begin(); ?>	<?= GridView::widget([
 		'dataProvider' => $dataProvider,
 		'filterModel' => $searchModel,
+		'formatter' => [
+			'class' => 'yii\i18n\Formatter',
+			'nullDisplay' => '<i><font color=red>无</font></i>',
+			'dateFormat' => 'YYYY年MM月dd日',
+			'datetimeFormat' => 'YYYY年MM月dd日 HH:mm:ss',
+			'timeFormat' => 'HH:mm:ss',
+			'locale' => 'zh-CN',
+			'defaultTimeZone' => 'Asia/Shanghai',
+		],
 		'columns' => [
 			['class' => 'yii\grid\SerialColumn'],
 
@@ -30,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			'author_name',
 			'created_at:datetime',
 			'lc:datetime',
-			'updated_at:datetime',
+			// 'updated_at:datetime',
 			// 'status',
 			// 'title',
 			// 'content:ntext',

@@ -16,9 +16,13 @@ Yii2 需要PHP版本高于5.4,最佳匹配PHP7
 
   `curl -sS https://getcomposer.org/installer | php`
 
+
+
 - 更新全局asset plugin
 
   `composer.phar global require "fxp/composer-asset-plugin:^1.3.1"`
+
+
 
 - 更新框架
 
@@ -30,9 +34,13 @@ Yii2 需要PHP版本高于5.4,最佳匹配PHP7
 
   解决方案2：composer更换国内源
 
+
+
 - 环境初始化
 
   `./init`
+
+
 
 - 配置数据库
 
@@ -53,6 +61,8 @@ yii2_test.sql是Postgresql的数据库DUMP，可导入使用。
 空库开始的话需要用初始化数据库
 
 `yii migrate/up`
+
+
 
 
 Yii 2 Advanced Project Template
@@ -114,8 +124,9 @@ tests                    contains various tests for the advanced application
     codeception/         contains tests developed with Codeception PHP Testing Framework
 ```
 
-===============================
 Apache configration
+===============================
+
 Frontend sample
 ```
 <VirtualHost frontend.dev:80>

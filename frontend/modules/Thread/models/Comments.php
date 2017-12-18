@@ -46,8 +46,8 @@ class Comments extends \yii\db\ActiveRecord
             [['author_email', 'content'], 'string'],
             [['created_at', 'updated_at'], 'safe'],
             [['author_ip'], 'string', 'max' => 50],
-            [['thread_id'], 'exist', 'skipOnError' => true, 'targetClass' => Thread::className(), 'targetAttribute' => ['thread_id' => 'id']],
-            [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['author_id' => 'id']],
+            [['thread_id'], 'exist', 'skipOnError' => FALSE, 'targetClass' => Thread::className(), 'targetAttribute' => ['thread_id' => 'id']],
+            [['author_id'], 'exist', 'skipOnError' => FALSE, 'targetClass' => User::className(), 'targetAttribute' => ['author_id' => 'id']],
 			['verifyCode', 'captcha'],
         ];
     }

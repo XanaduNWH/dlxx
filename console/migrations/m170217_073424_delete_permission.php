@@ -10,6 +10,8 @@ class m170217_073424_delete_permission extends Migration
 
 		$admin = $auth->getRole('admin');
 
+		$rule = new \common\models\rbac\AuthorRule;
+
 		// add "deletePost" permission
 		$deletePost = $auth->createPermission('deletePost');
 		$deletePost->description = 'Delete post';
@@ -18,6 +20,7 @@ class m170217_073424_delete_permission extends Migration
 		// add the "deleteOwnPost" permission and associate the rule with it.
 		$deleteOwnPost = $auth->createPermission('deleteOwnPost');
 		$deleteOwnPost->description = 'Delete own post';
+		$deleteOwnPost->ruleName = $rule->name;
 		$auth->add($deleteOwnPost);
 
 		// "deletePost" will be used from "admin"
