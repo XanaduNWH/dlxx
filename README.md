@@ -17,13 +17,6 @@ Yii2 需要PHP版本高于5.4,最佳匹配PHP7
   `curl -sS https://getcomposer.org/installer | php`
 
 
-
-- 更新全局asset plugin
-
-  `composer.phar global require "fxp/composer-asset-plugin:^1.3.1"`
-
-
-
 - 更新框架
 
   `php composer.phar update`
@@ -63,7 +56,30 @@ yii2_test.sql是Postgresql的数据库DUMP，可导入使用。
 `yii migrate/up`
 
 
+使用
+===============================
 
+OAuth2.0
+-------------------------------
+
+先初始化数据库：
+`yii migrate --migrationPath=@conquer/oauth2/migrations`
+
+暂时没做Client_ID发行功能，手工在oauth2_client表写数据即可
+
+* 认证页面：
+http://frontend.dev/auth/index?response_type=code&client_id=111&redirect_uri=http://sourcedomain/callback
+
+* 请求token：
+http://frontend.dev/auth/token?code=HSL7-cBgPjm02D4J3CifRdOxbyq9dd7KcLsfMNsv&grant_type=authorization_code&client_id=111
+
+* token过期后刷新：
+http://frontend.dev/auth/token?refresh_token=TU3h1HDj2iX9V7lIW8tdfmut6DM4uhv7rObrnJo2&grant_type=refresh_token&client_id=111&client_secret=j4jjdfjg4ijs
+
+api/thread 接口配置为OAuth认证，可使用access_token进行查询:
+`curl -i http://api.yii.dev/threads?access_token=yFf6YSA-tkA35-qakM_8kU5BLXxblLy0_toHpHbC`
+
+-------------------------------
 
 Yii 2 Advanced Project Template
 ===============================

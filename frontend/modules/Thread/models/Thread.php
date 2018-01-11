@@ -47,7 +47,7 @@ class Thread extends \yii\db\ActiveRecord
 		return [
 			[['author_id', 'status'], 'integer'],
 			[['title','content'],'required'],
-			[['author_name','lastcomment_at', 'updated_by'], 'safe'],
+			[['title','content'], 'safe'],
 			[['content'], 'string'],
 			[['title'], 'string', 'max' => 64],
 			// [['title'],\common\models\cellphoneValidator::className()],

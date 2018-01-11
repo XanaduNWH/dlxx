@@ -40,6 +40,21 @@ class CountryController extends ActiveController
 		// avoid authentication on CORS-pre-flight requests (HTTP OPTIONS method)
 		$behaviors['authenticator']['except'] = ['options'];
 
+// var_dump(yii::$app->request->remoteIP);die;
+		$behaviors['access'] = [
+			'class' => \yii\filters\AccessControl::className(),
+			'rules' => [
+				[
+					'allow' => true,
+					'ips' => [
+						'127.0.0.1',
+					]
+				]
+			]
+		];
+
+//		var_dump($behaviors);die;
+
 		return $behaviors;
 	}
 }

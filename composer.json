@@ -24,7 +24,8 @@
 	"mdmsoft/yii2-admin": "^3.2",
         "bower-asset/angular": "^1.6",
         "bower-asset/angular-route": "^1.6",
-        "bower-asset/angular-resource": "^1.6"
+        "bower-asset/angular-resource": "^1.6",
+        "conquer/oauth2": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",

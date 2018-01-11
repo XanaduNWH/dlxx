@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "98d2908a07b178be312d89aab03a8d8b",
+    "content-hash": "75ebfd422fa53cadde0b032e6203989a",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -184,16 +184,16 @@
         },
         {
             "name": "aliyuncs/oss-sdk-php",
-            "version": "v2.2.4",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aliyun/aliyun-oss-php-sdk.git",
-                "reference": "0b9b85b6c5c38cfc4ef3b0205a5a62d1e36acf2e"
+                "reference": "e69f57916678458642ac9d2fd341ae78a56996c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aliyun/aliyun-oss-php-sdk/zipball/0b9b85b6c5c38cfc4ef3b0205a5a62d1e36acf2e",
-                "reference": "0b9b85b6c5c38cfc4ef3b0205a5a62d1e36acf2e",
+                "url": "https://api.github.com/repos/aliyun/aliyun-oss-php-sdk/zipball/e69f57916678458642ac9d2fd341ae78a56996c8",
+                "reference": "e69f57916678458642ac9d2fd341ae78a56996c8",
                 "shasum": ""
             },
             "require": {
@@ -221,7 +221,7 @@
             ],
             "description": "Aliyun OSS SDK for PHP",
             "homepage": "http://www.aliyun.com/product/oss/",
-            "time": "2017-04-25T09:15:12+00:00"
+            "time": "2018-01-08T06:59:35+00:00"
         },
         {
             "name": "bower-asset/adminlte",
@@ -271,16 +271,16 @@
         },
         {
             "name": "bower-asset/angular",
-            "version": "v1.6.8-patch5521",
+            "version": "v1.6.9-patch5530",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular.git",
-                "reference": "409e8c7fabaddb1233f75ed4b1ae79ada0d22272"
+                "reference": "cd4b0d40f7b23cfa10b96c7345b4d1933290f474"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular/zipball/409e8c7fabaddb1233f75ed4b1ae79ada0d22272",
-                "reference": "409e8c7fabaddb1233f75ed4b1ae79ada0d22272",
+                "url": "https://api.github.com/repos/angular/bower-angular/zipball/cd4b0d40f7b23cfa10b96c7345b4d1933290f474",
+                "reference": "cd4b0d40f7b23cfa10b96c7345b4d1933290f474",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -328,20 +328,20 @@
         },
         {
             "name": "bower-asset/angular-resource",
-            "version": "v1.6.8-patch5521",
+            "version": "v1.6.9-patch5530",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-resource.git",
-                "reference": "36f97a3a3c3233c1ce15bc9b92efd6c6eba7b2e2"
+                "reference": "88ab633204e7f095b03459437a39fa7c4884e12d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-resource/zipball/36f97a3a3c3233c1ce15bc9b92efd6c6eba7b2e2",
-                "reference": "36f97a3a3c3233c1ce15bc9b92efd6c6eba7b2e2",
+                "url": "https://api.github.com/repos/angular/bower-angular-resource/zipball/88ab633204e7f095b03459437a39fa7c4884e12d",
+                "reference": "88ab633204e7f095b03459437a39fa7c4884e12d",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.6.8-patch5521"
+                "bower-asset/angular": "1.6.9-patch5530"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -354,20 +354,20 @@
         },
         {
             "name": "bower-asset/angular-route",
-            "version": "v1.6.8-patch5521",
+            "version": "v1.6.9-patch5530",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-route.git",
-                "reference": "450d1f8cf092af2fc541dc2264a5d94ce14bcbf1"
+                "reference": "ecb40fccd122d28f8b69b9014be6d36ba93c7777"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/450d1f8cf092af2fc541dc2264a5d94ce14bcbf1",
-                "reference": "450d1f8cf092af2fc541dc2264a5d94ce14bcbf1",
+                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/ecb40fccd122d28f8b69b9014be6d36ba93c7777",
+                "reference": "ecb40fccd122d28f8b69b9014be6d36ba93c7777",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.6.8-patch5521"
+                "bower-asset/angular": "1.6.9-patch5530"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -846,6 +846,54 @@
             "time": "2017-09-13T13:09:47+00:00"
         },
         {
+            "name": "conquer/oauth2",
+            "version": "1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/borodulin/yii2-oauth2-server.git",
+                "reference": "004d565ea84b2dc7ba2b002e0df81de64a87fe46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/borodulin/yii2-oauth2-server/zipball/004d565ea84b2dc7ba2b002e0df81de64a87fe46",
+                "reference": "004d565ea84b2dc7ba2b002e0df81de64a87fe46",
+                "shasum": ""
+            },
+            "require": {
+                "jakeasmith/http_build_url": "*",
+                "yiisoft/yii2": ">=2.0.4"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "conquer\\oauth2\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Borodulin",
+                    "email": "borodulin@gmail.com"
+                }
+            ],
+            "description": "The Oauth2 Server extension for the Yii2 framework",
+            "homepage": "https://github.com/borodulin/yii2-oauth2-server",
+            "keywords": [
+                "oauth2",
+                "oauth2-server",
+                "yii2"
+            ],
+            "time": "2017-03-21T11:37:16+00:00"
+        },
+        {
             "name": "deesoft/yii2-adminlte",
             "version": "1.0",
             "source": {
@@ -1150,6 +1198,39 @@
                 "icon"
             ],
             "time": "2016-10-24T15:52:54+00:00"
+        },
+        {
+            "name": "jakeasmith/http_build_url",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jakeasmith/http_build_url.git",
+                "reference": "93c273e77cb1edead0cf8bcf8cd2003428e74e37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jakeasmith/http_build_url/zipball/93c273e77cb1edead0cf8bcf8cd2003428e74e37",
+                "reference": "93c273e77cb1edead0cf8bcf8cd2003428e74e37",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/http_build_url.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jake A. Smith",
+                    "email": "theman@jakeasmith.com"
+                }
+            ],
+            "description": "Provides functionality for http_build_url() to environments without pecl_http.",
+            "time": "2017-05-01T15:36:40+00:00"
         },
         {
             "name": "mdmsoft/yii2-admin",
@@ -1768,23 +1849,23 @@
         },
         {
             "name": "yiisoft/yii2-gii",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "1bd6df6804ca077ec022587905a0d43eb286f507"
+                "reference": "db41f647d9b73702ceb6864fdfce827a72b5ce42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/1bd6df6804ca077ec022587905a0d43eb286f507",
-                "reference": "1bd6df6804ca077ec022587905a0d43eb286f507",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/db41f647d9b73702ceb6864fdfce827a72b5ce42",
+                "reference": "db41f647d9b73702ceb6864fdfce827a72b5ce42",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/typeahead.js": "0.10.* | ~0.11.0",
                 "phpspec/php-diff": ">=1.0.2",
-                "yiisoft/yii2": ">=2.0.4",
-                "yiisoft/yii2-bootstrap": "~2.0"
+                "yiisoft/yii2": "~2.0.13",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1817,7 +1898,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2016-03-18T14:09:46+00:00"
+            "time": "2017-12-22T23:53:06+00:00"
         }
     ],
     "aliases": [],
