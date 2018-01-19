@@ -90,8 +90,7 @@ class Thread extends \yii\db\ActiveRecord
 		$this->save();
 	}
 
-	public function beforeSave($insert)
-	{
+	public function beforeSave($insert) {
 		if (parent::beforeSave($insert)) {
 			if($this->isNewRecord){
 				$this->lastcomment_at = NULL;

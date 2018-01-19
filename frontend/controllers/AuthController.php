@@ -24,7 +24,14 @@ class AuthController extends Controller
         return [
             // returns access token
             'token' => [
-                'class' => \conquer\oauth2\TokenAction::classname(),
+				'class' => \conquer\oauth2\TokenAction::classname(),
+				'grantTypes' => [
+					'authorization_code' => [ 
+						'class' => 'conquer\oauth2\granttypes\Authorization',
+						'accessTokenLifetime' => 1800,
+					],
+					'refresh_token' => 'conquer\oauth2\granttypes\RefreshToken',
+				]
             ],
         ];
     }

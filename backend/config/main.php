@@ -11,7 +11,25 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+		'admin' => [
+			'class' => 'mdm\admin\Module',
+		],
+		'Oauth' => [
+			'class' => 'backend\modules\Oauth\Module',
+		],
+	],
+	'as access' => [
+		'class' => 'mdm\admin\classes\AccessControl',
+		'allowActions' => [
+			'Oauth/*',
+			'gii/*',
+			'debug/*',
+			'site/*',
+			'rbac/*',
+			'admin/*', // add or remove allowed actions to this list
+		],
+	],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',

@@ -12,4 +12,8 @@ class TestController extends Controller
 		$message = \Faker\Provider\Uuid::uuid();
         return $this->render('say', ['message' => $message]);
     }
+
+	public function actionCallback() {
+		return $this->render('callback',['reqParams' => Yii::$app->request->queryParams]);
+	}
 }
