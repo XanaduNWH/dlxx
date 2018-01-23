@@ -271,16 +271,16 @@
         },
         {
             "name": "bower-asset/angular",
-            "version": "v1.6.9-patch5530",
+            "version": "v1.6.9-patch5548",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular.git",
-                "reference": "cd4b0d40f7b23cfa10b96c7345b4d1933290f474"
+                "reference": "cae66195ba7b583333004be60bda32144cec6b60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular/zipball/cd4b0d40f7b23cfa10b96c7345b4d1933290f474",
-                "reference": "cd4b0d40f7b23cfa10b96c7345b4d1933290f474",
+                "url": "https://api.github.com/repos/angular/bower-angular/zipball/cae66195ba7b583333004be60bda32144cec6b60",
+                "reference": "cae66195ba7b583333004be60bda32144cec6b60",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -328,20 +328,20 @@
         },
         {
             "name": "bower-asset/angular-resource",
-            "version": "v1.6.9-patch5530",
+            "version": "v1.6.9-patch5548",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-resource.git",
-                "reference": "88ab633204e7f095b03459437a39fa7c4884e12d"
+                "reference": "12a75b85d1c60c38052a0fafdc17edf646c9a326"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-resource/zipball/88ab633204e7f095b03459437a39fa7c4884e12d",
-                "reference": "88ab633204e7f095b03459437a39fa7c4884e12d",
+                "url": "https://api.github.com/repos/angular/bower-angular-resource/zipball/12a75b85d1c60c38052a0fafdc17edf646c9a326",
+                "reference": "12a75b85d1c60c38052a0fafdc17edf646c9a326",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.6.9-patch5530"
+                "bower-asset/angular": "1.6.9-patch5548"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -354,20 +354,20 @@
         },
         {
             "name": "bower-asset/angular-route",
-            "version": "v1.6.9-patch5530",
+            "version": "v1.6.9-patch5548",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-route.git",
-                "reference": "ecb40fccd122d28f8b69b9014be6d36ba93c7777"
+                "reference": "8fe4d4a7cc904ac39b38c212cb3153a58c3e9e1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/ecb40fccd122d28f8b69b9014be6d36ba93c7777",
-                "reference": "ecb40fccd122d28f8b69b9014be6d36ba93c7777",
+                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/8fe4d4a7cc904ac39b38c212cb3153a58c3e9e1b",
+                "reference": "8fe4d4a7cc904ac39b38c212cb3153a58c3e9e1b",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.6.9-patch5530"
+                "bower-asset/angular": "1.6.9-patch5548"
             },
             "type": "bower-asset-library",
             "extra": {

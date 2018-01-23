@@ -26,7 +26,7 @@ class AuthController extends Controller
             'token' => [
 				'class' => \conquer\oauth2\TokenAction::classname(),
 				'grantTypes' => [
-					'authorization_code' => [ 
+					'authorization_code' => [
 						'class' => 'conquer\oauth2\granttypes\Authorization',
 						'accessTokenLifetime' => 1800,
 					],
