@@ -12,8 +12,11 @@ class m180123_091738_alter_user_table extends myMigration
      */
     public function safeUp()
     {
-		$this->alterColumn('{{%user}}', 'created_at', $this->timestamptz()->notNull());
-		$this->alterColumn('{{%user}}', 'updated_at', $this->timestamptz()->notNull());
+		$userTable = '{{%user}}';
+		$this->dropColumn($userTable, 'created_at');
+		$this->dropColumn($userTable, 'updated_at');
+		$this->addColumn($userTable, 'created_at', $this->timestamptz()->notNull()->defaultExpression("NOW()"));
+		$this->addColumn($userTable, 'updated_at', $this->timestamptz());
     }
 
     /**
