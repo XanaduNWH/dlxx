@@ -68,7 +68,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				'value' => count($model->comments),
 			],
 		],
-		'template' => '<tr><th{captionOptions} width = 120>{label}</th><td{contentOptions}>{value}</td></tr>',
+		'template' => '<tr><th{captionOptions} width = 180>{label}</th><td{contentOptions}>{value}</td></tr>',
 	]) ?>
 </div>
 <hr />

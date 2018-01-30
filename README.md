@@ -23,7 +23,7 @@ Yii2 需要PHP版本高于5.4,最佳匹配PHP7
 
   *由于众所周知的网络问题，此步有极大几率失败。
 
-  解决方案1：proxychains
+  解决方案1：科学上网
 
   解决方案2：composer更换国内源
 
@@ -36,7 +36,7 @@ Yii2 需要PHP版本高于5.4,最佳匹配PHP7
 
 
 - 配置数据库
-
+ 
 ```
 'db' => [
     'class' => 'yii\db\Connection',
@@ -65,7 +65,13 @@ OAuth2.0
 先初始化数据库：
 `yii migrate --migrationPath=@conquer/oauth2/migrations`
 
-暂时没做Client_ID发行功能，手工在oauth2_client表写数据即可
+* Client_id发行页面
+
+http://backend.dev/Oauth/
+
+此页面需要登录
+
+http://frontend.dev/site/signup
 
 * 认证页面：
 http://frontend.dev/auth/index?response_type=code&client_id=111&redirect_uri=http://sourcedomain/callback
@@ -76,8 +82,12 @@ http://frontend.dev/auth/token?code=HSL7-cBgPjm02D4J3CifRdOxbyq9dd7KcLsfMNsv&gra
 * token过期后刷新：
 http://frontend.dev/auth/token?refresh_token=TU3h1HDj2iX9V7lIW8tdfmut6DM4uhv7rObrnJo2&grant_type=refresh_token&client_id=111&client_secret=j4jjdfjg4ijs
 
-api/thread 接口配置为OAuth认证，可使用access_token进行查询:
+api节点下的thread 接口配置为OAuth认证，可使用access_token进行查询:
 `curl -i http://api.yii.dev/threads?access_token=yFf6YSA-tkA35-qakM_8kU5BLXxblLy0_toHpHbC`
+
+TODO
+
+Scope管理
 
 -------------------------------
 
