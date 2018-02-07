@@ -26,7 +26,7 @@ class ChangePasswordForm extends Model
 				'verify_new_password',
 				'compare',
 				'compareAttribute' => 'new_password',
-				'message' => "New passwords don't match"
+				'message' => Yii::t('yii',"New passwords don't match!"),
 			],
 		];
 	}
@@ -70,7 +70,7 @@ class ChangePasswordForm extends Model
 		return Yii::$app
 			->mailer
 			->compose(
-				['html' => 'changePassword-html'],
+				['html' => 'changePassword-html','text' => 'changePassword-text'],
 				['user' => $user]
 			)
 			->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' robot'])

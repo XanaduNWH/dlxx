@@ -271,16 +271,16 @@
         },
         {
             "name": "bower-asset/angular",
-            "version": "v1.6.9-patch5548",
+            "version": "v1.6.9-patch5550",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular.git",
-                "reference": "cae66195ba7b583333004be60bda32144cec6b60"
+                "reference": "8646d9c1ae50fd9e801b65afa15b7f189e922512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular/zipball/cae66195ba7b583333004be60bda32144cec6b60",
-                "reference": "cae66195ba7b583333004be60bda32144cec6b60",
+                "url": "https://api.github.com/repos/angular/bower-angular/zipball/8646d9c1ae50fd9e801b65afa15b7f189e922512",
+                "reference": "8646d9c1ae50fd9e801b65afa15b7f189e922512",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -328,20 +328,20 @@
         },
         {
             "name": "bower-asset/angular-resource",
-            "version": "v1.6.9-patch5548",
+            "version": "v1.6.9-patch5550",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-resource.git",
-                "reference": "12a75b85d1c60c38052a0fafdc17edf646c9a326"
+                "reference": "e7577bd2a35c19b707c37fee0f2672355e71b833"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-resource/zipball/12a75b85d1c60c38052a0fafdc17edf646c9a326",
-                "reference": "12a75b85d1c60c38052a0fafdc17edf646c9a326",
+                "url": "https://api.github.com/repos/angular/bower-angular-resource/zipball/e7577bd2a35c19b707c37fee0f2672355e71b833",
+                "reference": "e7577bd2a35c19b707c37fee0f2672355e71b833",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.6.9-patch5548"
+                "bower-asset/angular": "1.6.9-patch5550"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -354,20 +354,20 @@
         },
         {
             "name": "bower-asset/angular-route",
-            "version": "v1.6.9-patch5548",
+            "version": "v1.6.9-patch5550",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-route.git",
-                "reference": "8fe4d4a7cc904ac39b38c212cb3153a58c3e9e1b"
+                "reference": "b9100072e31903f72d3fbdc5e3642d2419ab57a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/8fe4d4a7cc904ac39b38c212cb3153a58c3e9e1b",
-                "reference": "8fe4d4a7cc904ac39b38c212cb3153a58c3e9e1b",
+                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/b9100072e31903f72d3fbdc5e3642d2419ab57a0",
+                "reference": "b9100072e31903f72d3fbdc5e3642d2419ab57a0",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.6.9-patch5548"
+                "bower-asset/angular": "1.6.9-patch5550"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -434,16 +434,16 @@
         },
         {
             "name": "bower-asset/blueimp-file-upload",
-            "version": "v9.19.3",
+            "version": "v9.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blueimp/jQuery-File-Upload.git",
-                "reference": "58b9a99d9b168c375a28ff9dc0a23140ac717f3b"
+                "reference": "7d1d64e4d4e2a30cd087fe27355183db980aa785"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/58b9a99d9b168c375a28ff9dc0a23140ac717f3b",
-                "reference": "58b9a99d9b168c375a28ff9dc0a23140ac717f3b",
+                "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/7d1d64e4d4e2a30cd087fe27355183db980aa785",
+                "reference": "7d1d64e4d4e2a30cd087fe27355183db980aa785",
                 "shasum": ""
             },
             "require": {
@@ -513,16 +513,16 @@
         },
         {
             "name": "bower-asset/blueimp-load-image",
-            "version": "v2.17.1",
+            "version": "v2.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
-                "reference": "8def72724a432c74536471da3cbac11596231ede"
+                "reference": "d97d1651e89befcd4659d5543863eb8f205ffe1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/8def72724a432c74536471da3cbac11596231ede",
-                "reference": "8def72724a432c74536471da3cbac11596231ede",
+                "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/d97d1651e89befcd4659d5543863eb8f205ffe1b",
+                "reference": "d97d1651e89befcd4659d5543863eb8f205ffe1b",
                 "shasum": ""
             },
             "type": "bower-asset-library"

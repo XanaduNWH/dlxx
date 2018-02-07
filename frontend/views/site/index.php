@@ -11,7 +11,6 @@ $this->title = $title;
         <h1><?= $title ?></h1>
 
 		<p><a class="btn btn-lg btn-success" href="<?= \yii\helpers\Url::toRoute('country/index') ?>">Country List</a></p>
-		<p><a class="btn btn-lg btn-success" href="<?= \yii\helpers\Url::to('Thread') ?>">Thread List</a></p>
-		<p><a class="btn btn-lg btn-success" href="<?= \yii\helpers\Url::to('admin') ?>">Admin Modules</a></p>
+		<p><a class="btn btn-lg btn-success" href="<?= \yii\helpers\Url::to('/Thread') ?>">Thread List</a></p>
     </div>
 </div>
