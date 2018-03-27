@@ -44,7 +44,6 @@ class ChangePasswordForm extends Model
 		$user = User::findOne([
 			'status' => User::STATUS_ACTIVE,
 			'username' => Yii::$app->user->identity->username,
-			
 		]);
 
 		if($user->validatePassword($this->old_password)){
@@ -56,7 +55,7 @@ class ChangePasswordForm extends Model
 		}
 	}
 
-		/**
+	/**
 	 * Sends an email with a link, for resetting the password.
 	 *
 	 * @return boolean whether the email was send

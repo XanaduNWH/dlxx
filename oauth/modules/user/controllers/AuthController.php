@@ -1,5 +1,5 @@
 <?php
-namespace frontend\controllers;
+namespace oauth\modules\user\controllers;
 
 use Yii;
 use common\models\LoginForm;
@@ -44,9 +44,11 @@ class AuthController extends Controller
 	{
 		$model = new LoginForm();
 		if ($model->load(\Yii::$app->request->post()) && $model->login()) {
+			// $this->render('authorization');
 			return $this->goBack();
 		} else {
-			return $this->render('/site/login', [
+			// return $this->render('//site/login', [
+			return $this->render('@frontend/views/site/login', [
 				'model' => $model,
 			]);
 		}

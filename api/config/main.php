@@ -11,6 +11,11 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'api\controllers',
+	'modules' => [
+		'users' => [
+			'class' => 'api\modules\users\Module',
+		],
+	],
     'components' => [
         'request' => [
 			'enableCookieValidation' => false,
@@ -34,7 +39,8 @@ return [
 			'enableStrictParsing' => true,
             'showScriptName' => false,
 			'rules' => [
-				['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
+//				['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
+				['class' => 'yii\rest\UrlRule', 'controller' => 'users/user'],
 				['class' => 'yii\rest\UrlRule', 'controller' => 'thread'],
 				[
 					'class' => 'yii\rest\UrlRule',
@@ -46,13 +52,12 @@ return [
 			],
         ],
 		'response' => [
-			// ...
+			'format' => \yii\web\Response::FORMAT_JSON,
 			'formatters' => [
 				\yii\web\Response::FORMAT_JSON => [
 					'class' => 'yii\web\JsonResponseFormatter',
 					'prettyPrint' => YII_DEBUG, // use "pretty" output in debug mode
 					'encodeOptions' => JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE,
-					// ...
 				],
 			],
 		],

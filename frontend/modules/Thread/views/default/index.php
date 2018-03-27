@@ -25,9 +25,11 @@ $this->params['breadcrumbs'][] = $this->title;
 			'class' => 'yii\i18n\Formatter',
 			'nullDisplay' => '<i><font color=red>无</font></i>',
 			'dateFormat' => 'YYYY年MM月dd日',
-			'datetimeFormat' => 'YYYY年MM月dd日 HH:mm:ss',
+			 'datetimeFormat' => 'YYYY年MM月dd日 HH:mm:ss',
 			'timeFormat' => 'HH:mm:ss',
+			// 'locale' => 'zh-CN@calendar=chinese',
 			'locale' => 'zh-CN',
+			// 'calendar' => \IntlDateFormatter::TRADITIONAL,
 			'defaultTimeZone' => 'Asia/Shanghai',
 		],
 		'columns' => [

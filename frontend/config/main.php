@@ -15,6 +15,9 @@ return [
 		'Thread' => [
 			'class' => 'frontend\modules\Thread\Module',
 		],
+		'Layui' => [
+			'class' => 'frontend\modules\Layui\Module',
+		],
 	],
     'components' => [
         'request' => [
@@ -27,7 +30,7 @@ return [
         ],
         'session' => [
             // this is the name of the session cookie used for login on the frontend
-            'name' => 'advanced-frontend',
+            'name' => 'Yii2-learning-frontend',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
