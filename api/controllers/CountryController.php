@@ -23,18 +23,18 @@ class CountryController extends ActiveController
 
 		// add CORS filter
 		$behaviors['corsFilter'] = [
-			'class' => \yii\filters\Cors::className(),
+			'class' => \yii\filters\Cors::class,
 		];
 
 		// re-add authentication filter
 		$behaviors['authenticator'] = [
-		// 	'class' => HttpBasicAuth::className(),
+		// 	'class' => HttpBasicAuth::class,
 
-			'class' => CompositeAuth::className(),
+			'class' => CompositeAuth::class,
 			'authMethods' => [
-				HttpBasicAuth::className(),
-				HttpBearerAuth::className(),
-				QueryParamAuth::className(),
+				HttpBasicAuth::class,
+				HttpBearerAuth::class,
+				QueryParamAuth::class,
 			],
 		];
 		// avoid authentication on CORS-pre-flight requests (HTTP OPTIONS method)
@@ -42,7 +42,7 @@ class CountryController extends ActiveController
 
 // var_dump(yii::$app->request->remoteIP);die;
 		$behaviors['access'] = [
-			'class' => \yii\filters\AccessControl::className(),
+			'class' => \yii\filters\AccessControl::class,
 			'rules' => [
 				[
 					'allow' => true,

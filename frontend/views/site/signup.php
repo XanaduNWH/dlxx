@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 				<?= $form->field($model, 'repassword')->passwordInput() ?>
 
-				<?= $form->field($model, 'captcha')->widget(Captcha::classname() ) ?>
+				<?= $form->field($model, 'captcha')->widget(Captcha::class ) ?>
 
                 <div class="form-group">
                     <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>

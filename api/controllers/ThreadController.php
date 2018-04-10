@@ -13,7 +13,7 @@ class ThreadController extends ActiveController {
 		$behaviors['contentNegotiator']['formats']['text/html'] = Response::FORMAT_JSON;
 
 		$behaviors['tokenAuth'] = [
-			'class' => \conquer\oauth2\TokenAuth::className(),
+			'class' => \conquer\oauth2\TokenAuth::class,
 		];
 
 		return $behaviors;

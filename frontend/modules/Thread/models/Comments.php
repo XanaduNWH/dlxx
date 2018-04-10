@@ -46,8 +46,8 @@ class Comments extends \yii\db\ActiveRecord
             [['author_email', 'content'], 'string'],
             [['created_at', 'updated_at'], 'safe'],
             [['author_ip'], 'string', 'max' => 50],
-            [['thread_id'], 'exist', 'skipOnError' => FALSE, 'targetClass' => Thread::className(), 'targetAttribute' => ['thread_id' => 'id']],
-            [['author_id'], 'exist', 'skipOnError' => FALSE, 'targetClass' => User::className(), 'targetAttribute' => ['author_id' => 'id']],
+            [['thread_id'], 'exist', 'skipOnError' => FALSE, 'targetClass' => Thread::class, 'targetAttribute' => ['thread_id' => 'id']],
+            [['author_id'], 'exist', 'skipOnError' => FALSE, 'targetClass' => User::class, 'targetAttribute' => ['author_id' => 'id']],
 			['verifyCode', 'captcha'],
         ];
     }
@@ -77,7 +77,7 @@ class Comments extends \yii\db\ActiveRecord
      */
     public function getThread()
     {
-        return $this->hasOne(Thread::className(), ['id' => 'thread_id']);
+        return $this->hasOne(Thread::class, ['id' => 'thread_id']);
     }
 
     /**
@@ -85,7 +85,7 @@ class Comments extends \yii\db\ActiveRecord
      */
     public function getAuthor()
     {
-        return $this->hasOne(User::className(), ['id' => 'author_id']);
+        return $this->hasOne(User::class, ['id' => 'author_id']);
     }
 
 	public function beforeSave($insert) {

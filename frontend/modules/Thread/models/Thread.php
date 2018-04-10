@@ -50,8 +50,8 @@ class Thread extends \yii\db\ActiveRecord
 			[['title','content'], 'safe'],
 			[['content'], 'string'],
 			[['title'], 'string', 'max' => 64],
-			// [['title'],\common\models\cellphoneValidator::className()],
-			[['author_id'], 'exist', 'skipOnError' => false, 'targetClass' => User::className(), 'targetAttribute' => ['author_id' => 'id']],
+			// [['title'],\common\models\cellphoneValidator::class],
+			[['author_id'], 'exist', 'skipOnError' => false, 'targetClass' => User::class, 'targetAttribute' => ['author_id' => 'id']],
 		];
 	}
 
@@ -122,7 +122,7 @@ class Thread extends \yii\db\ActiveRecord
 	*/
 	public function getComments()
 	{
-		return $this->hasMany(Comments::className(), ['thread_id' => 'id'])->orderBy('"created_at" DESC NULLS LAST');
+		return $this->hasMany(Comments::class, ['thread_id' => 'id'])->orderBy('"created_at" DESC NULLS LAST');
 	}
 
 	/**
@@ -130,7 +130,7 @@ class Thread extends \yii\db\ActiveRecord
 	*/
 	public function getAuthor()
 	{
-		return $this->hasOne(User::className(), ['id' => 'author_id']);
+		return $this->hasOne(User::class, ['id' => 'author_id']);
 	}
 
 	/**

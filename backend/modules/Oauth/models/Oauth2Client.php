@@ -82,7 +82,7 @@ class Oauth2Client extends \yii\db\ActiveRecord
 	 */
 	public function getOauth2AccessTokens()
 	{
-		return $this->hasMany(Oauth2AccessToken::className(), ['client_id' => 'client_id']);
+		return $this->hasMany(Oauth2AccessToken::class, ['client_id' => 'client_id']);
 	}
 
 	/**
@@ -90,7 +90,7 @@ class Oauth2Client extends \yii\db\ActiveRecord
 	 */
 	public function getOauth2AuthorizationCodes()
 	{
-		return $this->hasMany(Oauth2AuthorizationCode::className(), ['client_id' => 'client_id']);
+		return $this->hasMany(Oauth2AuthorizationCode::class, ['client_id' => 'client_id']);
 	}
 
 	/**
@@ -98,7 +98,7 @@ class Oauth2Client extends \yii\db\ActiveRecord
 	 */
 	public function getOauth2RefreshTokens()
 	{
-		return $this->hasMany(Oauth2RefreshToken::className(), ['client_id' => 'client_id']);
+		return $this->hasMany(Oauth2RefreshToken::class, ['client_id' => 'client_id']);
 	}
 
 	/**

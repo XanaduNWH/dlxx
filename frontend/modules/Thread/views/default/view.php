@@ -108,11 +108,11 @@ echo ListView::widget([
 
 	<?php //echo $form->field($comments, 'author_email')->textInput(['maxlength' => true]) ?>
 
-	<?= $form->field($comments, 'content')->widget(CKEditor::className(), [
+	<?= $form->field($comments, 'content')->widget(CKEditor::class, [
 			'options' => ['rows' => 6],
 			'preset' => 'full',
 		]) ?>
-	<?= $form->field($comments, 'verifyCode')->widget(Captcha::className(), [
+	<?= $form->field($comments, 'verifyCode')->widget(Captcha::class, [
 		'template' => '<div class="row"><div class="col-lg-2">{image}</div><div class="col-lg-2">{input}</div></div>',
 		'captchaAction' => '/site/captcha',
 		]) ?>

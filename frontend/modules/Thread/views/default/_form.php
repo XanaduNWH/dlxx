@@ -15,7 +15,7 @@ use dosamigos\ckeditor\CKEditor;
 
 	<?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-	<?= $form->field($model, 'content')->widget(CKEditor::className(), [
+	<?= $form->field($model, 'content')->widget(CKEditor::class, [
 			'options' => ['rows' => 6],
 			'preset' => 'full',
 		]) ?>

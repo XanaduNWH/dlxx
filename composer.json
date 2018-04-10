@@ -25,7 +25,8 @@
         "bower-asset/angular": "^1.6",
         "bower-asset/angular-route": "^1.6",
         "bower-asset/angular-resource": "^1.6",
-        "conquer/oauth2": "*"
+        "conquer/oauth2": "*",
+        "sweelix/yii2-oauth2-serve": "~1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",
